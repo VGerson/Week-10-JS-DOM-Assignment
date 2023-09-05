@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <div class="card rounded-0 rounded-top">
+        <div class="card-body">
+            <h1 class="text-center py-2">Birthday List</h1>
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                        <label for="first-name">First Name</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="tel" placeholder="phone" maxlength="10">
+                        <label for="tel">Phone</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="birthdate" placeholder="Birthdate" required>
+                        <label for="birth-date">Birthdate</label>
+                    </div>
+                </div>
+                <div class="d-grid btn-primary">
+                    <button class="btn btn-primary" type="submit" value="Submit" id="button">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table table-dark table-striped">
+        <tbody id="table">
+            <tr>
+                <th>First Name</th>
+                <th>last Name</th>
+                <th>Phone</th>
+                <th>DOB</th>
+            </tr>
+        </tbody>
+    </table>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>
+
+
+
+
+
